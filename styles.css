@@ -1,5 +1,14 @@
 /* Style for the map container */
+#map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
 #map {
-    height: 100vh; /* Full screen height */
-    width: 100%;   /* Full screen width */
+    width: 600px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    border: 2px solid #000; /* Optional: add a border to distinguish the map area */
 }
