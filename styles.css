@@ -1,23 +1,33 @@
 /* Style for the map container */
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin 0;
+  padding 0;
+}
+
 #map-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+    margin: 0;
+    padding: 0;
 }
 
 #map {
     width: 100%;
-    height: 60vh; /* Adjust height for better view on mobile */
+    height: 60vh; 
     margin: 0;
     padding: 0;
 }
 
 /* Media query for larger screens */
 @media (min-width: 600px) {
-    #map {
-        width: 600px; /* Adjust width for larger screens */
-        height: 400px; /* Adjust height for larger screens */
+    #container {
+      flex-direction: row;
+    }
+    #map-container {
+        width: 60%;
     }
 }
