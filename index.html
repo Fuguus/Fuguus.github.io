@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Itinerary</title>
+    <title>Google Map Example</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+</head>
+<body>
     <div id="container">
-      <div id="map-container">
-        <div id="map"></div>
-      </div>
-      <div id="info">
-          <p>info</p>
+        <div id="map-container">
+            <div id="map"></div>
         </div>
-      <div id="itinerary">
-          <p>Itinerary</p>
+        <div id="text-container">
+            <div id="info">
+                <p>This is the info text container.</p>
+            </div>
+            <div id="itinerary">
+                <p>This is the itinerary text container.</p>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <!-- Replace YOUR_API_KEY with the provided Google Maps API key -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmhwH7cE-uHtTlG3nK2fMTFhpEVYjyqW0&callback=initMap" async defer></script>
-  </body>
+</body>
 </html>
