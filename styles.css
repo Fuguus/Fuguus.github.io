@@ -31,17 +31,27 @@
     height: 100%; /* Full height */
     display: flex;
     flex-direction: row;
-    background-color: #f0f0f0; /* Optional: background color for visibility */
 }
 
 /* Style for the info and itinerary containers */
-#info, #itinerary {
+#info {
     flex: 1; /* Each takes half the height of the text container */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #FFB7B7;
 }
+
+#itinerary { 
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFD9D9;
+}
+
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
