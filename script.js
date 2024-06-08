@@ -1,12 +1,10 @@
 // Function to initialize the map
 function initMap() {
-    
-    var centerMap = { lat:34.2226, lng: 134.0199}
+    const centerMap = { lat: 34.1284, lng: 133.6628 }
 
-    const mapOptions = {
+    var mapOptions = {
         center: centerMap,
-        zoom: 10 
+        zoom: 10 // Higher zoom level for closer view
     };
-   
-    const map = new.google.maps.Map(document.getElementById('map'), mapOptions);
-  }
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+}
