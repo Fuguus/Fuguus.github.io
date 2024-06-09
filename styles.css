@@ -41,7 +41,7 @@
     justify-content: center;
     text-align: center;
     color: black;
-    background-color: #FFB7B7; /* Light blue background */
+    background-color: #FFFCFC; /* Light blue background */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -61,7 +61,7 @@
     justify-content: center;
     text-align: center;
     color: white;
-    background-color: #FFD9D9; /* Light gray background */
+    background-color: #FFB7B7; /* Light gray background */
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
     font-weight: bold;

@@ -16,8 +16,16 @@ function updateTime() {
     document.getElementById('current-time').textContent = currentTime;
 }
 
-// Intial Call to Update Time
+// Function to update the current date
+function updateDate() {
+    var now = new Date();
+    var currentDate = now.toLocaleDateString(undefined, { day: 'numeric', month: 'long' });
+    document.getElementById('current-date').textContent = currentDate;
+}
+
+// Initial call to display the time and date immediately
 updateTime();
+updateDate();
 
 // Update the time every second
 setInterval(updateTime, 1000);
