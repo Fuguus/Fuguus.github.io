@@ -1,105 +1,95 @@
-/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style for the overall container */
 #container {
     display: flex;
-    flex-direction: row; /* Place items side by side */
+    flex-direction: row; 
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
 }
 
-/* Style for the map container */
 #map-container {
-    flex: .75; /* Adjust the flex value to control width */
-    height: 100%; /* Full height */
+    flex: .75; 
+    height: 100%; 
 }
 
-/* Style for the map */
 #map {
     width: 100%;
     height: 100%;
 }
 
-/* Style for the text container */
 #text-container {
-    flex: 1; /* Adjust the flex value to control width */
-    height: 100%; /* Full height */
+    flex: 1; 
+    height: 100%; 
     display: flex;
-    flex-direction: row; /* Stack info and sub-container horizontally */
+    flex-direction: row; 
 }
 
-/* Style for the info container */
 #info {
-    flex: 1.25; /* Adjust the flex value to control width */
+    flex: 1.25; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: black;
-    background-color: #FFFCFC; /* Light blue background */
+    background-color: #FFFCFC; 
     font-family: 'Roboto', sans-serif;
 }
 
-/* Style for the sub-container */
 #sub-container {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Stack time and itinerary vertically */
+    flex-direction: column; 
     height: 100%;
 }
 
-/* Style for the time container */
 #time-container {
-    flex: .05; /* Adjust the flex value to control height */
+    flex: .05; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    background-color: #FFB7B7; /* Light gray background */
+    background-color: #FFB7B7; 
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
     font-weight: bold;
 }
 
-/* Style for the itinerary container */
 #itinerary {
-    flex: 1; /* Adjust the flex value to control height */
+    flex: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: black;
-    background-color: #FFFCFC; /* Light green background */
+    background-color: #FFFCFC; 
     font-family: 'Roboto', sans-serif;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 600px) {
     #container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
     }
     #map-container, #text-container {
-        width: 100%; /* Full width for both containers */
-        height: 50%; /* Half viewport height for each */
+        width: 100%; 
+        height: 50%; 
     }
     #text-container {
-        flex-direction: column; /* Stack info and sub-container vertically on small screens */
+        flex-direction: column; 
     }
     #info, #sub-container {
-        height: 50%; /* Half height for each container */
-        width: 100%; /* Full width for each container */
+        height: 50%; 
+        width: 100%; 
     }
     #sub-container {
-        flex-direction: row; /* Stack time and itinerary horizontally */
+        flex-direction: row; 
     }
     #time-container, #itinerary {
-        height: 100%; /* Full height for each text container */
-        width: 50%; /* Half width for each text container */
+        height: 100%;
+        width: 50%; 
     }
 }
