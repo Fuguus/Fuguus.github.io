@@ -30,28 +30,46 @@
     flex: 1; /* Adjust the flex value to control width */
     height: 100%; /* Full height */
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Stack info and sub-container horizontally */
 }
 
-/* Style for the info and itinerary containers */
+/* Style for the info container */
 #info {
-    flex: 1; /* Each takes half the height of the text container */
+    flex: 1; /* Adjust the flex value to control width */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #FFB7B7;
+    background-color: #add8e6; /* Light blue background */
 }
 
-#itinerary { 
+/* Style for the sub-container */
+#sub-container {
     flex: 1;
     display: flex;
+    flex-direction: column; /* Stack time and itinerary vertically */
+    height: 100%;
+}
+
+/* Style for the time container */
+#time-container {
+    flex: 1; /* Adjust the flex value to control height */
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #FFD9D9;
+    background-color: #f0f0f0; /* Light gray background */
 }
 
+/* Style for the itinerary container */
+#itinerary {
+    flex: 1; /* Adjust the flex value to control height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #90ee90; /* Light green background */
+}
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
@@ -63,10 +81,17 @@
         height: 50%; /* Half viewport height for each */
     }
     #text-container {
-        flex-direction: row;     
+        flex-direction: column; /* Stack info and sub-container vertically on small screens */
     }
-    #info, #itinerary {
-        height: 100%; 
-        width: 50%;     
+    #info, #sub-container {
+        height: 50%; /* Half height for each container */
+        width: 100%; /* Full width for each container */
+    }
+    #sub-container {
+        flex-direction: row; /* Stack time and itinerary horizontally */
+    }
+    #time-container, #itinerary {
+        height: 100%; /* Full height for each text container */
+        width: 50%; /* Half width for each text container */
     }
 }
