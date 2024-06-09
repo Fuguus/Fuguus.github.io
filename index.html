@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Itinerary</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
         <div id="text-container">
             <div id="info">
-                <p>This is the info text container.</p>
+                <p id="info-text">This is the info text container.</p>
             </div>
             <div id="sub-container">
                 <div id="time-container">
                     <p id="current-time"></p>
-                    <p> &nbsp-&nbsp </p>
+                    <p>&nbsp-&nbsp</p>
                     <p id="current-date"></p>
                 </div>
                 <div id="itinerary">
-                    <p>This is the itinerary text container.</p>
+                    <div class="place">
+                        <img src="path/to/image1.jpg" class="info-button" data-info="Place 1 details here" alt="Place 1">
+                        <span>Place 1</span>
+                    </div>
+                    <div class="place">
+                        <img src="path/to/image2.jpg" class="info-button" data-info="Place 2 details here" alt="Place 2">
+                        <span>Place 2</span>
+                    </div>
+                    <div class="place">
+                        <img src="path/to/image3.jpg" class="info-button" data-info="Place 3 details here" alt="Place 3">
+                        <span>Place 3</span>
+                    </div>
+                    <!-- Add more places as needed -->
                 </div>
             </div>
         </div>
@@ -27,7 +40,7 @@
             <div id="map"></div>
         </div>
     </div>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmhwH7cE-uHtTlG3nK2fMTFhpEVYjyqW0&callback=initMap" async defer></script>
 </body>
 </html>

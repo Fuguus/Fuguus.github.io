@@ -20,7 +20,7 @@ body {
 
 /* Style for the map container */
 #map-container {
-    flex: 2; /* Adjust the flex value to control width */
+    flex: 0.75; /* Adjust the flex value to control width */
     height: 100%; /* Full height */
 }
 
@@ -32,7 +32,7 @@ body {
 
 /* Style for the text container */
 #text-container {
-    flex: 1; /* Adjust the flex value to control width */
+    flex: 1.25; /* Adjust the flex value to control width */
     height: 100%; /* Full height */
     display: flex;
     flex-direction: row; /* Stack info and sub-container horizontally */
@@ -40,12 +40,12 @@ body {
 
 /* Style for the info container */
 #info {
-    flex: 1; /* Adjust the flex value to control width */
+    flex: 1.25; /* Adjust the flex value to control width */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #FFB7B7; /* Light red background */
+    background-color: #FFFCFC; /* Very light pink background to match itinerary */
 }
 
 /* Style for the sub-container */
@@ -58,34 +58,32 @@ body {
 
 /* Style for the time container */
 #time-container {
-    flex: 1; /* Adjust the flex value to control height */
+    flex: 0.05; /* Adjust the flex value to control height */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: #FFD9D9; /* Light pink background */
+    color: white; /* White font color */
+    font-size: 35px; /* Font size */
+    font-weight: bold; /* Font weight */
 }
 
 /* Style for the itinerary container */
 #itinerary {
     flex: 1; /* Adjust the flex value to control height */
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: left;
     background-color: #FFFCFC; /* Very light pink background */
     padding: 10px;
+    overflow-y: auto;
 }
 
-/* Style for the list of places */
-#places-list {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-}
-
-/* Style for each list item */
-#places-list li {
+/* Style for each place item */
+.place {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
