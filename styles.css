@@ -53,7 +53,7 @@
 
 /* Style for the time container */
 #time-container {
-    flex: 1; /* Adjust the flex value to control height */
+    flex: .1; /* Adjust the flex value to control height */
     display: flex;
     align-items: center;
     justify-content: center;
