@@ -20,6 +20,17 @@ function updateTimeAndDate() {
     }
 }
 
+// Function to update the info section
+function updateInfo(event) {
+    var infoText = event.target.getAttribute('data-info');
+    document.getElementById('info-text').textContent = infoText;
+}
+
+// Add event listeners to all info buttons
+document.querySelectorAll('.info-button').forEach(button => {
+    button.addEventListener('click', updateInfo);
+});
+
 // Initial call to display the time and date immediately
 updateTimeAndDate();
 
