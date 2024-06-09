@@ -16,5 +16,8 @@ function updateTime() {
     document.getElementById('current-time').textContent = currentTime;
 }
 
+// Intial Call to Update Time
+updateTime();
+
 // Update the time every second
 setInterval(updateTime, 1000);

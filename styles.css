@@ -15,7 +15,7 @@
 
 /* Style for the map container */
 #map-container {
-    flex: 2; /* Adjust the flex value to control width */
+    flex: .75; /* Adjust the flex value to control width */
     height: 100%; /* Full height */
 }
 
@@ -35,12 +35,14 @@
 
 /* Style for the info container */
 #info {
-    flex: 1; /* Adjust the flex value to control width */
+    flex: 1.25; /* Adjust the flex value to control width */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #add8e6; /* Light blue background */
+    color: black;
+    background-color: #FFB7B7; /* Light blue background */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Style for the sub-container */
@@ -53,12 +55,16 @@
 
 /* Style for the time container */
 #time-container {
-    flex: .1; /* Adjust the flex value to control height */
+    flex: .05; /* Adjust the flex value to control height */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #f0f0f0; /* Light gray background */
+    color: white;
+    background-color: #FFD9D9; /* Light gray background */
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 /* Style for the itinerary container */
@@ -68,7 +74,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #90ee90; /* Light green background */
+    color: black;
+    background-color: #FFFCFC; /* Light green background */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Media query for smaller screens */
