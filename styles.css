@@ -23,7 +23,7 @@ body {
     flex: 0.1; /* Adjust the flex value to control height */
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 10px;
     background-color: #C47390; /* Updated background color */
     color: white; /* White font color */
     font-size: 35px; /* Font size */
@@ -38,6 +38,7 @@ body {
 #static-text {
     margin-right: 10px;
     font-size: 40px;
+    padding-left: 20px;
     text-shadow: 1px 1px 1px #919191,
         1px 2px 1px #919191,
         1px 3px 1px #919191,
@@ -74,7 +75,8 @@ body {
     justify-content: flex-start;
     text-align: left;
     background-color: #F8EAEF; /* Very light pink background */
-    padding: 10px;
+    padding-top: 30px; 
+    padding-left: 30px;
     overflow-y: auto;
     font-size: 15px; /* Font size */
     font-weight: bold; /* Font weight */
