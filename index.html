@@ -9,35 +9,34 @@
 </head>
 <body>
     <div id="container">
-        <div id="text-container">
+        <div id="time-container">
+            <p id="static-text">Travel Itinerary</p>
+            <p id="current-time"></p>
+            <p>&nbsp-&nbsp</p>
+            <p id="current-date"></p>
+        </div>
+        <div id="main-content">
             <div id="info">
                 <p id="info-text">This is the info text container.</p>
             </div>
-            <div id="sub-container">
-                <div id="time-container">
-                    <p id="current-time"></p>
-                    <p>&nbsp-&nbsp</p>
-                    <p id="current-date"></p>
+            <div id="itinerary">
+                <div class="place">
+                    <img src="path/to/image1.jpg" class="info-button" data-info="Place 1 details here" alt="Place 1">
+                    <span>Place 1</span>
                 </div>
-                <div id="itinerary">
-                    <div class="place">
-                        <img src="path/to/image1.jpg" class="info-button" data-info="Place 1 details here" alt="Place 1">
-                        <span>Place 1</span>
-                    </div>
-                    <div class="place">
-                        <img src="path/to/image2.jpg" class="info-button" data-info="Place 2 details here" alt="Place 2">
-                        <span>Place 2</span>
-                    </div>
-                    <div class="place">
-                        <img src="path/to/image3.jpg" class="info-button" data-info="Place 3 details here" alt="Place 3">
-                        <span>Place 3</span>
-                    </div>
-                    <!-- Add more places as needed -->
+                <div class="place">
+                    <img src="path/to/image2.jpg" class="info-button" data-info="Place 2 details here" alt="Place 2">
+                    <span>Place 2</span>
                 </div>
+                <div class="place">
+                    <img src="path/to/image3.jpg" class="info-button" data-info="Place 3 details here" alt="Place 3">
+                    <span>Place 3</span>
+                </div>
+                <!-- Add more places as needed -->
             </div>
-        </div>
-        <div id="map-container">
-            <div id="map"></div>
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

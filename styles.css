@@ -13,47 +13,9 @@ body {
 /* Style for the overall container */
 #container {
     display: flex;
-    flex-direction: row; /* Place items side by side */
+    flex-direction: column; /* Stack time on top, main content below */
     width: 100%;
     height: 100vh; /* Full viewport height */
-}
-
-/* Style for the map container */
-#map-container {
-    flex: 0.75; /* Adjust the flex value to control width */
-    height: 100%; /* Full height */
-}
-
-/* Style for the map */
-#map {
-    width: 100%;
-    height: 100%;
-}
-
-/* Style for the text container */
-#text-container {
-    flex: 1.25; /* Adjust the flex value to control width */
-    height: 100%; /* Full height */
-    display: flex;
-    flex-direction: row; /* Stack info and sub-container horizontally */
-}
-
-/* Style for the info container */
-#info {
-    flex: 1.25; /* Adjust the flex value to control width */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #FFFCFC; /* Very light pink background to match itinerary */
-}
-
-/* Style for the sub-container */
-#sub-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column; /* Stack time and itinerary vertically */
-    height: 100%;
 }
 
 /* Style for the time container */
@@ -61,17 +23,44 @@ body {
     flex: 0.05; /* Adjust the flex value to control height */
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    padding-left: 10px;
     background-color: #FFD9D9; /* Light pink background */
     color: white; /* White font color */
     font-size: 35px; /* Font size */
     font-weight: bold; /* Font weight */
 }
 
+#time-container p {
+    margin: 0 5px; /* Add margin for spacing between elements */
+}
+
+/* Style for the static text */
+#static-text {
+    margin-right: 10px; /* Add margin to the right of static text */
+}
+
+/* Style for the main content */
+#main-content {
+    display: flex;
+    flex-direction: row; /* Place items side by side */
+    flex: 1; /* Take up the remaining space */
+    width: 100%;
+    height: 95vh; /* Remaining viewport height */
+}
+
+/* Style for the info container */
+#info {
+    flex: .8; /* Adjust the flex value to control width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFFCFC; /* Very light pink background to match itinerary */
+}
+
 /* Style for the itinerary container */
 #itinerary {
-    flex: 1; /* Adjust the flex value to control height */
+    flex: .6; /* Adjust the flex value to control width */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -80,6 +69,20 @@ body {
     background-color: #FFFCFC; /* Very light pink background */
     padding: 10px;
     overflow-y: auto;
+    font-size: 15px; /* Font size */
+    font-weight: bold; /* Font weight */
+}
+
+/* Style for the map container */
+#map-container {
+    flex: 1; /* Adjust the flex value to control width */
+    height: 100%; /* Full height */
+}
+
+/* Style for the map */
+#map {
+    width: 100%;
+    height: 100%;
 }
 
 /* Style for each place item */
@@ -102,22 +105,14 @@ body {
     #container {
         flex-direction: column; /* Stack items vertically */
     }
-    #map-container, #text-container {
-        width: 100%; /* Full width for both containers */
-        height: 50%; /* Half viewport height for each */
+    #main-content {
+        flex-direction: column; /* Stack content vertically */
     }
-    #text-container {
-        flex-direction: column; /* Stack info and sub-container vertically on small screens */
+    #map-container, #info, #itinerary {
+        width: 100%; /* Full width for all containers */
+        height: auto; /* Auto height for each container */
     }
-    #info, #sub-container {
-        height: 50%; /* Half height for each container */
-        width: 100%; /* Full width for each container */
-    }
-    #sub-container {
-        flex-direction: row; /* Stack time and itinerary horizontally */
-    }
-    #time-container, #itinerary {
-        height: 100%; /* Full height for each text container */
-        width: 50%; /* Half width for each text container */
+    #itinerary {
+        height: auto; /* Auto height for the itinerary container */
     }
 }
