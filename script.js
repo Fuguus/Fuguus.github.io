@@ -42,7 +42,7 @@ function createItineraryItems() {
         placeDiv.className = 'place';
 
         const img = document.createElement('img');
-        img.src = 'images/location_icon.png';
+        img.src = 'images/location_icon.jpg';
         img.alt = place.altText;
         img.className = 'info-button';
         img.setAttribute('data-info', place.info);
