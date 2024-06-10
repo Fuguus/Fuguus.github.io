@@ -26,13 +26,40 @@ function updateInfo(event) {
     document.getElementById('info-text').textContent = infoText;
 }
 
-// Add event listeners to all info buttons
-document.querySelectorAll('.info-button').forEach(button => {
-    button.addEventListener('click', updateInfo);
-});
+// Array of places
+const places = [
+    { imgSrc: 'C:/Users/Liam/Documents/GitHub/Fuguus.github.io/images/location_icon.jpg', altText: 'Place 1', info: 'Place 1 details here', name: 'Place 1' },
+    { imgSrc: 'path/to/image2.jpg', altText: 'Place 2', info: 'Place 2 details here', name: 'Place 2' },
+    { imgSrc: 'path/to/image3.jpg', altText: 'Place 3', info: 'Place 3 details here', name: 'Place 3' },
+    // Add more places as needed
+];
+
+// Function to create itinerary items
+function createItineraryItems() {
+    const itineraryContainer = document.getElementById('itinerary');
+    places.forEach(place => {
+        const placeDiv = document.createElement('div');
+        placeDiv.className = 'place';
+
+        const img = document.createElement('img');
+        img.src = 'C:/Users/Liam/Documents/GitHub/Fuguus.github.io/images/location_icon.jpg';
+        img.alt = place.altText;
+        img.className = 'info-button';
+        img.setAttribute('data-info', place.info);
+        img.addEventListener('click', updateInfo);
+
+        const span = document.createElement('span');
+        span.textContent = place.name;
+
+        placeDiv.appendChild(img);
+        placeDiv.appendChild(span);
+        itineraryContainer.appendChild(placeDiv);
+    });
+}
 
 // Initial call to display the time and date immediately
 updateTimeAndDate();
+createItineraryItems();
 
 // Update the time and date every second
 setInterval(updateTimeAndDate, 1000);

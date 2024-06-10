@@ -20,11 +20,11 @@ body {
 
 /* Style for the time container */
 #time-container {
-    flex: 0.05; /* Adjust the flex value to control height */
+    flex: 0.1; /* Adjust the flex value to control height */
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    background-color: #FFD9D9; /* Light pink background */
+    padding-left: 20px;
+    background-color: #C47390; /* Updated background color */
     color: white; /* White font color */
     font-size: 35px; /* Font size */
     font-weight: bold; /* Font weight */
@@ -36,7 +36,14 @@ body {
 
 /* Style for the static text */
 #static-text {
-    margin-right: 10px; /* Add margin to the right of static text */
+    margin-right: 10px;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191;
 }
 
 /* Style for the main content */
@@ -55,7 +62,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #FFFCFC; /* Very light pink background to match itinerary */
+    background-color: #E3A8BD; /* Very light pink background to match itinerary */
 }
 
 /* Style for the itinerary container */
@@ -66,7 +73,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
-    background-color: #FFFCFC; /* Very light pink background */
+    background-color: #F8EAEF; /* Very light pink background */
     padding: 10px;
     overflow-y: auto;
     font-size: 15px; /* Font size */
