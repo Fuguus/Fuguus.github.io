@@ -28,7 +28,7 @@ function updateInfo(event) {
 
 // Array of places
 const places = [
-    { imgSrc: 'C:/Users/Liam/Documents/GitHub/Fuguus.github.io/images/location_icon.jpg', altText: 'Place 1', info: 'Place 1 details here', name: 'Place 1' },
+    { imgSrc: 'NA', altText: 'Place 1', info: 'Place 1 details here', name: 'Place 1' },
     { imgSrc: 'path/to/image2.jpg', altText: 'Place 2', info: 'Place 2 details here', name: 'Place 2' },
     { imgSrc: 'path/to/image3.jpg', altText: 'Place 3', info: 'Place 3 details here', name: 'Place 3' },
     // Add more places as needed
@@ -42,7 +42,7 @@ function createItineraryItems() {
         placeDiv.className = 'place';
 
         const img = document.createElement('img');
-        img.src = 'C:/Users/Liam/Documents/GitHub/Fuguus.github.io/images/location_icon.jpg';
+        img.src = 'images/location_icon.png';
         img.alt = place.altText;
         img.className = 'info-button';
         img.setAttribute('data-info', place.info);
