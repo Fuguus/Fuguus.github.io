@@ -28,9 +28,9 @@ function updateInfo(event) {
 
 // Array of places
 const places = [
-    { imgSrc: 'NA', altText: 'Place 1', info: 'Place 1 details here', name: 'Place 1' },
-    { imgSrc: 'path/to/image2.jpg', altText: 'Place 2', info: 'Place 2 details here', name: 'Place 2' },
-    { imgSrc: 'path/to/image3.jpg', altText: 'Place 3', info: 'Place 3 details here', name: 'Place 3' },
+    { altText: 'Place 1', info: 'Place 1 details here', name: 'Place 1' },
+    { altText: 'Place 2', info: 'Place 2 details here', name: 'Place 2' },
+    { altText: 'Place 3', info: 'Place 3 details here', name: 'Place 3' },
     // Add more places as needed
 ];
 
