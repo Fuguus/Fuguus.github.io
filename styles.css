@@ -125,8 +125,8 @@ body {
   width: 25px;
   cursor: pointer;
   background-color: #f6e5eb;
-  border-left: solid 2px #f2d8e1;
-  border-right: solid 2px #f2d8e1;
+  border-right: solid 1px #f2d8e1;
+  border-left: solid 1px #f2d8e1;
   transition: .1s;
   align-items: center;
   justify-content: center;
