@@ -21,28 +21,28 @@ body {
 /* Style for the top section */
 #top-section {
     display: flex;
+    flex: .07;
     flex-direction: row; /* Place title-container and time-container side by side */
     width: 100%;
-}
-
-/* Style for the title-container */
-#title-container {
-    flex: 0.5; /* Adjust the flex value to control width */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align text to the left */
-    background-color: #C47390;
-    color: white;
-    font-size: 40px; /* Font size */
-    font-weight: bold; /* Font weight */
     text-shadow: 1px 1px 1px #919191,
         1px 2px 1px #919191,
         1px 3px 1px #919191,
         1px 4px 1px #919191,
         1px 5px 1px #919191,
         1px 6px 1px #919191;
-    padding-left: 20px;
-    border-bottom: 1px solid gray; /* Regular gray border on bottom */
+}
+
+/* Style for the title-container */
+#title-container {
+    flex: 1; /* Adjust the flex value to control width */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+    background-color: #C47390;
+    color: white;
+    font-size: 45px; /* Font size */
+    font-weight: bold; /* Font weight */
+    padding-left: 20px; 
 }
 
 /* Style for the time container */
@@ -50,13 +50,25 @@ body {
     flex: 1; /* Adjust the flex value to control width */
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align text to the left */
+    justify-content: flex-end; /* Align text to the left */
     padding-left: 10px;
     background-color: #C47390; /* Updated background color */
-    color: white; /* White font color */
+    color: #fff; /* White font color */
     font-size: 35px; /* Font size */
     font-weight: bold; /* Font weight */
-    border-bottom: 1px solid gray; /* Regular gray border on bottom */
+    padding-right: 20px;
+}
+
+#current-time {
+  border-radius: 25px;
+  background: #E3A8BD;
+  border: 5px solid #E3A8BD;
+}
+
+#current-date {
+  border-radius: 25px;
+  background: #E3A8BD;
+  border: 5px solid #E3A8BD;
 }
 
 /* Style for the main content */
@@ -70,7 +82,7 @@ body {
 
 /* Style for the info container */
 #info {
-    flex: 0 0 auto; /* Adjust the flex value to control width */
+    flex: 0 0 auto;
     width: 600px;
     display: flex;
     align-items: center;
@@ -83,8 +95,8 @@ body {
 #itinerary {
   display: flex;
   flex: 0.6;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
   justify-content: flex-start;
   text-align: left;
   background-color: #F8EAEF; /* Very light pink background */
@@ -99,12 +111,25 @@ body {
   flex: 0;
 }
 
+.place {
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
 #sidebar {
   flex: 0 0 auto;
-  width: 20px;
+  width: 25px;
   cursor: pointer;
   background-color: #F8EAEF;
   border-left: solid 2px white;
+  transition: .1s;
+}
+
+#sidebar:hover {
+  width: 30px;
 }
 
 /* Style for the map container */
@@ -117,13 +142,6 @@ body {
 #map {
     width: 100%;
     height: 100%;
-}
-
-/* Style for each place item */
-.place {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
 }
 
 /* Style for the images acting as buttons */
