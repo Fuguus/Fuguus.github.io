@@ -84,7 +84,7 @@ body {
     overflow: hidden;
     font-size: 15px;
     font-weight: bold;
-    transition: flex 0.1s ease;
+    transition: flex 0.15s ease;
 }
 
 #itinerary.hidden {
@@ -114,13 +114,18 @@ body {
     font-weight: bold;
     font-size: 20px;
     color: #ebc5d3;
+    opacity: 90%;
 }
 
 #sidebar:hover {
-    width: 32px;
+    opacity: 100%;
 }
 
-#arrow {}
+#arrow {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 
 #arrow.flip {
     transform: rotate(-180deg);

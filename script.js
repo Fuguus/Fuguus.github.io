@@ -63,4 +63,6 @@ document.getElementById("sidebar").addEventListener("click", toggleItinerary);
 updateTimeAndDate();
 createItineraryItems();
 
+document.getElementById('info-text').textContent = places[0].info;
+
 setInterval(updateTimeAndDate, 1000);
