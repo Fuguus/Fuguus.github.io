@@ -104,7 +104,7 @@ body {
   overflow: hidden;
   font-size: 15px; /* Font size */
   font-weight: bold; /* Font weight */
-  transition: flex 0.25s ease;
+  transition: flex 0.1s ease;
 }
 
 #itinerary.hidden {
@@ -120,16 +120,31 @@ body {
 }
 
 #sidebar {
+  display: flex;
   flex: 0 0 auto;
   width: 25px;
   cursor: pointer;
-  background-color: #F8EAEF;
-  border-left: solid 2px white;
+  background-color: #f6e5eb;
+  border-left: solid 2px #f2d8e1;
+  border-right: solid 2px #f2d8e1;
   transition: .1s;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ebc5d3;
 }
 
 #sidebar:hover {
-  width: 30px;
+  width: 32px;
+}
+
+#arrow {
+}
+
+#arrow.flip {
+  transform: rotate(-180deg);
 }
 
 /* Style for the map container */

@@ -60,6 +60,9 @@ function createItineraryItems() {
 function toggleItinerary() {
   const itinerary = document.getElementById("itinerary");
   itinerary.classList.toggle("hidden");
+
+  const arrow = document.getElementById("arrow");
+  arrow.classList.toggle("flip");
 }
 
 document.getElementById("sidebar").addEventListener("click", toggleItinerary);
