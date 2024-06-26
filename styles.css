@@ -1,86 +1,67 @@
-/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Apply the Roboto font to the entire document */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Style for the overall container */
 #container {
     display: flex;
-    flex-direction: column; /* Stack time on top, main content below */
+    flex-direction: column;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
 }
 
-/* Style for the top section */
 #top-section {
     display: flex;
-    flex: .07;
-    flex-direction: row; /* Place title-container and time-container side by side */
+    flex: 0.07;
+    flex-direction: row;
     width: 100%;
-    text-shadow: 1px 1px 1px #919191,
-        1px 2px 1px #919191,
-        1px 3px 1px #919191,
-        1px 4px 1px #919191,
-        1px 5px 1px #919191,
-        1px 6px 1px #919191;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191;
 }
 
-/* Style for the title-container */
 #title-container {
-    flex: 1; /* Adjust the flex value to control width */
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align text to the left */
+    justify-content: flex-start;
     background-color: #C47390;
     color: white;
-    font-size: 45px; /* Font size */
-    font-weight: bold; /* Font weight */
-    padding-left: 20px; 
+    font-size: 45px;
+    font-weight: bold;
+    padding-left: 20px;
 }
 
-/* Style for the time container */
 #time-container {
-    flex: 1; /* Adjust the flex value to control width */
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align text to the left */
+    justify-content: flex-end;
     padding-left: 10px;
-    background-color: #C47390; /* Updated background color */
-    color: #fff; /* White font color */
-    font-size: 35px; /* Font size */
-    font-weight: bold; /* Font weight */
+    background-color: #C47390;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
     padding-right: 20px;
 }
 
-#current-time {
-  border-radius: 25px;
-  background: #E3A8BD;
-  border: 5px solid #E3A8BD;
+#current-time, #current-date {
+    border-radius: 25px;
+    background: #E3A8BD;
+    border: 5px solid #E3A8BD;
 }
 
-#current-date {
-  border-radius: 25px;
-  background: #E3A8BD;
-  border: 5px solid #E3A8BD;
-}
-
-/* Style for the main content */
 #main-content {
     display: flex;
-    flex-direction: row; /* Place items side by side */
-    flex: 1; /* Take up the remaining space */
+    flex-direction: row;
+    flex: 1;
     width: 100%;
-    height: 95vh; /* Remaining viewport height */
+    height: 95vh;
 }
 
-/* Style for the info container */
 #info {
     flex: 0 0 auto;
     width: 600px;
@@ -88,78 +69,73 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #E3A8BD; /* Very light pink background to match itinerary */
+    background-color: #E3A8BD;
 }
 
-/* Style for the itinerary container */
 #itinerary {
-  display: flex;
-  flex: 0.6;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  background-color: #F8EAEF; /* Very light pink background */
-  padding-top: 30px; 
-  overflow: hidden;
-  font-size: 15px; /* Font size */
-  font-weight: bold; /* Font weight */
-  transition: flex 0.1s ease;
+    display: flex;
+    flex: 0.6;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    background-color: #F8EAEF;
+    padding-top: 30px;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: bold;
+    transition: flex 0.1s ease;
 }
 
 #itinerary.hidden {
-  flex: 0;
+    flex: 0;
 }
 
 .place {
-  min-width: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-left: 30px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 30px;
 }
 
 #sidebar {
-  display: flex;
-  flex: 0 0 auto;
-  width: 25px;
-  cursor: pointer;
-  background-color: #f6e5eb;
-  border-right: solid 1px #f2d8e1;
-  border-left: solid 1px #f2d8e1;
-  transition: .1s;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  color: #ebc5d3;
+    display: flex;
+    flex: 0 0 auto;
+    width: 25px;
+    cursor: pointer;
+    background-color: #f6e5eb;
+    border-right: solid 1px #f2d8e1;
+    border-left: solid 1px #f2d8e1;
+    transition: 0.1s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ebc5d3;
 }
 
 #sidebar:hover {
-  width: 32px;
+    width: 32px;
 }
 
-#arrow {
-}
+#arrow {}
 
 #arrow.flip {
-  transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
 
-/* Style for the map container */
 #map-container {
-    flex: 1; /* Adjust the flex value to control width */
-    height: 100%; /* Full height */
+    flex: 1;
+    height: 100%;
 }
 
-/* Style for the map */
 #map {
     width: 100%;
     height: 100%;
 }
 
-/* Style for the images acting as buttons */
 .info-button {
     width: 30px;
     height: 30px;
