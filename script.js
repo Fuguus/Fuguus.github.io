@@ -57,6 +57,13 @@ function createItineraryItems() {
     });
 }
 
+function toggleItinerary() {
+  const itinerary = document.getElementById("itinerary");
+  itinerary.classList.toggle("hidden");
+}
+
+document.getElementById("sidebar").addEventListener("click", toggleItinerary);
+
 // Initial call to display the time and date immediately
 updateTimeAndDate();
 createItineraryItems();

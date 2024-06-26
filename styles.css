@@ -70,7 +70,8 @@ body {
 
 /* Style for the info container */
 #info {
-    flex: .8; /* Adjust the flex value to control width */
+    flex: 0 0 auto; /* Adjust the flex value to control width */
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,18 +81,30 @@ body {
 
 /* Style for the itinerary container */
 #itinerary {
-    flex: .6; /* Adjust the flex value to control width */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-align: left;
-    background-color: #F8EAEF; /* Very light pink background */
-    padding-top: 30px; 
-    padding-left: 30px;
-    overflow-y: auto;
-    font-size: 15px; /* Font size */
-    font-weight: bold; /* Font weight */
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  background-color: #F8EAEF; /* Very light pink background */
+  padding-top: 30px; 
+  overflow: hidden;
+  font-size: 15px; /* Font size */
+  font-weight: bold; /* Font weight */
+  transition: flex 0.25s ease;
+}
+
+#itinerary.hidden {
+  flex: 0;
+}
+
+#sidebar {
+  flex: 0 0 auto;
+  width: 20px;
+  cursor: pointer;
+  background-color: #F8EAEF;
+  border-left: solid 2px white;
 }
 
 /* Style for the map container */
@@ -119,21 +132,4 @@ body {
     height: 30px;
     margin-right: 10px;
     cursor: pointer;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 600px) {
-    #container {
-        flex-direction: column; /* Stack items vertically */
-    }
-    #main-content {
-        flex-direction: column; /* Stack content vertically */
-    }
-    #map-container, #info, #itinerary {
-        width: 100%; /* Full width for all containers */
-        height: auto; /* Auto height for each container */
-    }
-    #itinerary {
-        height: auto; /* Auto height for the itinerary container */
-    }
 }
