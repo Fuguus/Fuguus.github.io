@@ -29,7 +29,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     background-color: #C47390;
-    color: white;
+    color: #fff;
     font-size: 45px;
     font-weight: bold;
     padding-left: 20px;
@@ -50,8 +50,14 @@ body {
 
 #current-time, #current-date {
     border-radius: 25px;
-    background: #E3A8BD;
+    background-color: #E3A8BD;
     border: 5px solid #E3A8BD;
+    transition: 0.15s ease;
+}
+
+#current-date:hover {
+  background-color: #b63a66;
+  border: 5px solid #b63a66; 
 }
 
 #main-content {
@@ -63,8 +69,8 @@ body {
 }
 
 #info {
-    flex: 0 0 auto;
-    width: 600px;
+    flex: 0 1 auto;
+    width: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +88,8 @@ body {
     background-color: #E3A8BD;
     padding-top: 30px;
     overflow: hidden;
-    font-size: 15px;
+    color: #fff;
+    font-size: 20px;
     font-weight: bold;
     transition: flex 0.15s ease;
 }
@@ -104,21 +111,19 @@ body {
     flex: 0 0 auto;
     width: 25px;
     cursor: pointer;
-    background-color: #E3A8BD;
-    border-right: solid 1px #f2d8e1;
-    border-left: solid 1px #f2d8e1;
-    transition: 0.1s;
+    background-color: #C47390;    
     align-items: center;
     justify-content: center;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
     color: #ebc5d3;
-    opacity: 70%;
+    opacity: 75%;
+    transition: .1s; 
 }
 
 #sidebar:hover {
-    opacity: 85%;
+    opacity: 100%;
 }
 
 #arrow {
